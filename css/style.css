@@ -1,0 +1,375 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0% 5%;
+    /* background-color: blue; */
+    border-bottom: 1px solid ;
+}
+
+i{
+    font-size: 3rem;
+        
+}
+
+nav ul{
+    visibility: hidden;
+    list-style: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 60%;
+    height: 100%;
+    transform: translateX(-100%);
+    transition: 0.3s;
+    /* background-color: rgb(220, 220, 220); */
+    background-color: white;
+    padding: 10%;    
+}
+
+.active{
+    visibility: visible;
+    transform: translateY(0%);
+
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.logo{
+    font-weight: 900;
+    font-size: 1.8rem;
+}
+
+/* fin del nav - inicio del main */
+
+.fotografiaFondo{
+    width: 100%;
+    background-attachment: fixed;
+    height: 100%;
+}
+
+.articleBienvenida{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+    /* height: 500px; */
+}
+
+.slogan{
+    text-align: center;
+    /* color: white; */
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: madefor;
+    font-style: italic;
+}
+
+.tituloFotografiaProfesional{
+    /* color: white; */
+    font-size: x-large;
+    font-weight: lighter;
+    text-align: center;
+
+}
+
+.sectionAboutMe{
+    padding: 5%;
+    background-color: rgb(244, 244, 244);
+}
+
+.furboH2{
+    font-weight: bold;
+}
+
+.sectionGalerias{
+    padding: 5%;
+}
+
+.cardGalerias{
+    width: 100%;
+    margin-bottom: 10%;
+    border: 1px solid;    
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.imgCardGaleria{
+    width: 100%;
+    
+}
+
+section div h3{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+    font-family: madefor;
+    font-style: italic;
+    padding: 10%;
+    margin-bottom: 0px;
+} 
+
+.cuerpoCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.botonCard{
+    padding: 10px 20px;
+    border: 1px solid;
+    border-radius: 10px;
+    margin-bottom: 10%;
+}
+
+.headerCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 431px;
+    overflow: hidden;
+    background-color: black;
+}
+
+footer{
+    background-color: gray;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 5%;
+}
+
+footer a{
+    color: white;
+}
+
+.cajasFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.iconosRedesSociales{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+footer div div a i{
+    margin: 0% 5%;
+    
+}
+
+.iconos{
+    padding: 10px;
+    font-size: 2rem;
+}
+
+.galerias{
+    height: 150px;
+    overflow: hidden;
+    border: 1px solid white;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.imgGal{
+    width: 100%;  
+    
+}
+
+.tituloGaleria{
+    display: flex;
+    position: absolute;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    font-style: italic;
+    font-family: madefor;
+    opacity: 1;
+
+}
+
+.galeria1{
+  
+}
+
+.galeria2{
+   
+}
+.galeria3{
+   
+}
+.galeria4{
+    
+}
+
+
+
+@media(min-width: 576px){
+
+    nav ul{
+        visibility: visible;
+        transform: translateY(0%);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        padding: 15px 0px;
+        margin: 0px;   
+        background-color: white;
+
+        /* display: flex;
+        position: relative;
+        padding: 0%;
+        justify-content: space-between; */
+        
+        /* margin: 0%; */
+        
+    }
+
+    header nav ul li a{
+        padding: 0px 20px;
+        display: contents;
+    }
+
+    .menu_hamburguesa{
+        display: none;
+    }
+
+    /* aca comienza la seccion de inicio */
+
+    .fotografiaFondo{
+        width: 50%;
+        height: 100%;
+        /* float: left; */
+    }
+
+    .articleBienvenida{
+        padding: 3%;
+        /* height: 500px; */
+    }
+
+    .sectionHome{
+        display: flex;
+    }
+
+    li a{
+        font-weight: normal;
+    }
+
+    /*section about me*/
+
+    .sectionAboutMe{
+        margin-top: 5%;
+    }
+
+    .textoPresentacion{
+        font-size: small;
+    }
+
+    /*section galeria*/
+
+    .sectionGalerias{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 2%;
+        justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+
+    }
+
+    .slogan{
+        font-size: 1.4rem;
+    }
+
+    .tituloFotografiaProfesional{
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    .cardGalerias{
+        width: 40%;
+        margin-bottom: 5%;        
+    }
+
+    .headerCard{
+        height: 250px;
+    }
+
+    section div h3{
+        font-size: 1.2rem;
+    }
+
+    .botonCard{
+        font-size: small;
+    }
+
+    footer{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+
+
+}
+
+@media(min-width: 768px){
+    .slogan{
+        font-size: 2rem;
+    }
+
+    .tituloFotografiaProfesional{
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+    }
+
+    .sectionAboutMe{
+        margin-top: 5%;
+    }
+
+    .cardGalerias{
+        width: 32%;
+             
+    }
+
+    
+    
+}
+
+@media(min-width: 992px){
+    .cardGalerias{
+        width: 23%;
+             
+    }
+    
+}
+
+@media(min-width: 1200px){
+    
+}
+
+@media(min-width: 1400px){
+    
+}
